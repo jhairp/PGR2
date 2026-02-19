@@ -5,16 +5,8 @@
         alt="imagen Preview">
         <div class="controles">
 
-            <label> Brillo : {{brillo()}}</label>
-            <input type="range" min="0" max="200" (input)="actualizar('brillo', $event)">
-
-            
-            <label> Contraste : {{contraste()}}</label>
-            <input type="range" min="0" max="200" (input)="actualizar('contraste', $event)">
-
-            
-            <label> Blur : {{blur()}}</label>
-            <input type="range" min="0" max="200" (input)="actualizar('blur', $event)">
+            <label> Modo Antiguo : {{modoAntiguo() ? 'Sí' : 'No'}}</label>
+            <button (click)="toggleAntiguo()">Cambiar Modo</button>
         </div>
     </div>
 </div>
